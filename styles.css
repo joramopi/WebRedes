@@ -1,0 +1,431 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* ************************************** */
+/* Sidebar - Colores dinámicos por Unidad */
+/* ************************************** */
+
+/* Altura mínima de la barra lateral (se mantiene general) */
+.sidebar {
+    min-height: 100vh;
+    transition: background-color 0.5s ease, background-image 0.5s ease; /* Transición para el cambio de color */
+    color: white; /* Color de texto por defecto para los sidebars oscuros */
+}
+
+/* Base para el ícono de la red en el sidebar */
+.sidebar .fa-network-wired {
+    color: #2c3e50; /* Color base oscuro para el ícono */
+}
+.sidebar .bg-white { /* Fondo blanco para el ícono */
+    background-color: #e2e8f0;
+}
+
+
+/* -- Colores para "Principal" (index.html) -- */
+.sidebar-principal {
+    background-color: #1e6495; /* CAMBIO: Nuevo color de fondo */
+    color: white !important; /* Mantener texto blanco para contraste */
+}
+.sidebar-principal .text-white {
+    color: white !important; /* Asegura que cualquier elemento con text-white sea realmente blanco */
+}
+.sidebar-principal .text-gray-400 {
+    color: #a0aec0 !important; /* Mantener un gris más claro adecuado para fondos oscuros */
+}
+/* Item activo para Principal */
+.sidebar-principal .menu-item.bg-blue-700 {
+    background-color: #2c79a8 !important; /* CAMBIO: Tono de azul ligeramente más claro para el estado activo */
+    color: white !important; /* Asegura que el texto activo sea blanco */
+}
+/* Submenú para Principal */
+.sidebar-principal #submenu-unidades {
+    background-color: #2772a1 !important; /* CAMBIO: Tono ligeramente diferente para el submenú */
+}
+.sidebar-principal #submenu-unidades .unidad-item {
+    color: #e2e8f0 !important; /* Mantener texto claro para items del submenú */
+}
+.sidebar-principal #submenu-unidades .unidad-item:hover {
+    background-color: #2c79a8 !important; /* CAMBIO: Igual que el color activo o similar */
+}
+/* Hover general para items de menú en fondos oscuros */
+.sidebar-principal .menu-item:hover:not(.bg-blue-700) {
+    background-color: rgba(255, 255, 255, 0.1); /* Mantener para fondos oscuros */
+}
+
+
+/* -- Colores para "Unidad 1" (UT1.html) -- */
+.sidebar-ut1 {
+    background: linear-gradient(180deg, #2d6073 0%, #1e404c 100%);
+    color: white;
+}
+.sidebar-ut1 .text-white {
+    color: white !important;
+}
+.sidebar-ut1 .text-gray-400 {
+    color: #a0aec0 !important;
+}
+/* Item activo para UT1 */
+.sidebar-ut1 .menu-item.bg-blue-700 {
+    background-color: #3b7b90 !important; /* Tono de azul que combina */
+}
+/* Submenú para UT1 */
+.sidebar-ut1 #submenu-unidades {
+    background-color: #244d5c !important; /* Tono más oscuro para el submenú */
+}
+.sidebar-ut1 #submenu-unidades .unidad-item {
+    color: #e2e8f0 !important;
+}
+.sidebar-ut1 #submenu-unidades .unidad-item:hover {
+    background-color: #3b7b90 !important;
+}
+
+
+/* -- Colores para "Unidad 2" (UT2.html) -- */
+.sidebar-ut2 {
+    background: linear-gradient(180deg, #b5e8c3 0%, #9fc9a8 100%);
+    color: #1a202c !important;
+}
+.sidebar-ut2 .text-white {
+    color: #1a202c !important;
+}
+.sidebar-ut2 .text-gray-400 {
+    color: #4a5568 !important;
+}
+/* Item activo para UT2 */
+.sidebar-ut2 .menu-item.bg-blue-700 {
+    background-color: #92c49f !important;
+    color: white !important;
+}
+/* Submenú para UT2 */
+.sidebar-ut2 #submenu-unidades {
+    background-color: #9eccad !important;
+}
+.sidebar-ut2 #submenu-unidades .unidad-item {
+    color: #1a202c !important; /* Texto oscuro para submenú claro */
+}
+.sidebar-ut2 #submenu-unidades .unidad-item:hover {
+    background-color: #92c49f !important;
+}
+/* Hover general para items de menú en fondos claros */
+.sidebar-ut2 .menu-item:hover:not(.bg-blue-700) {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+
+/* -- Colores para "Unidad 3" (UT3.html) -- */
+.sidebar-ut3 {
+    background: linear-gradient(180deg, #65b8a6 0%, #4b897b 100%);
+    color: white;
+}
+.sidebar-ut3 .text-white {
+    color: white !important;
+}
+.sidebar-ut3 .text-gray-400 {
+    color: #a0aec0 !important;
+}
+/* Item activo para UT3 */
+.sidebar-ut3 .menu-item.bg-blue-700 {
+    background-color: #529487 !important;
+}
+/* Submenú para UT3 */
+.sidebar-ut3 #submenu-unidades {
+    background-color: #468c7e !important;
+}
+.sidebar-ut3 #submenu-unidades .unidad-item {
+    color: #e2e8f0 !important;
+}
+.sidebar-ut3 #submenu-unidades .unidad-item:hover {
+    background-color: #529487 !important;
+}
+
+
+/* -- Colores para "Unidad 4" (UT4.html) -- */
+.sidebar-ut4 {
+    background: linear-gradient(180deg, #f0f7da 0%, #c4c9b3 100%);
+    color: #1a202c !important;
+}
+.sidebar-ut4 .text-white {
+    color: #1a202c !important;
+}
+.sidebar-ut4 .text-gray-400 {
+    color: #4a5568 !important;
+}
+/* Item activo para UT4 */
+.sidebar-ut4 .menu-item.bg-blue-700 {
+    background-color: #dbe4b8 !important;
+    color: #1a202c !important;
+}
+/* Submenú para UT4 */
+.sidebar-ut4 #submenu-unidades {
+    background-color: #e2e8c2 !important;
+}
+.sidebar-ut4 #submenu-unidades .unidad-item {
+    color: #1a202c !important;
+}
+.sidebar-ut4 #submenu-unidades .unidad-item:hover {
+    background-color: #dbe4b8 !important;
+}
+/* Hover general para items de menú en fondos claros */
+.sidebar-ut4 .menu-item:hover:not(.bg-blue-700) {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+
+/* Elementos del menú */
+.menu-item {
+    transition: all 0.3s;
+}
+
+/* El hover general se mantiene, pero las variantes de unidad pueden tener uno específico */
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+/* Tarjetas de unidades */
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el submenú de unidades */
+#submenu-unidades {
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+#submenu-unidades:not(.hidden) {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación de rotación para el ícono de flecha */
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Transición suave para el menú desplegable */
+#submenu-unidades a {
+    transition: all 0.2s ease;
+}
+
+#submenu-unidades a:hover {
+    /* background-color: rgba(255, 255, 255, 0.1); - Este se sobrescribe por las clases de unidad */
+    padding-left: 1.25rem;
+}
+
+/* Estilos para los ítems del submenú */
+.unidad-item {
+    transition: all 0.2s;
+    display: block;
+}
+
+.unidad-item:hover {
+    transform: translateX(5px);
+}
+
+/* Asegurar que el menú se muestre sobre otros elementos */
+.sidebar {
+    position: relative;
+    z-index: 10;
+}
+
+/* Estilos para las tarjetas de unidades */
+.unit-card {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.unit-card:hover .unit-overlay {
+    opacity: 0.9;
+}
+
+.unit-card:hover .unit-content {
+    transform: translateY(0);
+}
+
+.unit-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7));
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.unit-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: white;
+    transform: translateY(30px);
+    transition: all 0.3s;
+}
+
+/* Barra de progreso */
+.progress-bar {
+    height: 5px;
+    background: #e2e8f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, #4c51bf, #6366f1);
+    border-radius: 5px;
+    width: 0;
+}
+
+/* Animaciones */
+@keyframes fillProgress {
+    from { width: 0; }
+    to { width: 75%; }
+}
+
+.animate-progress {
+    animation: fillProgress 1.5s ease-out forwards;
+}
+
+/* Estilos para el avatar */
+.avatar {
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el contenido dinámico */
+.content-section {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.content-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilos para el contenido de las unidades */
+.unit-content-section {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para el reproductor de video */
+#video-section {
+    display: none; /* Ocultar por defecto */
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#video-section:not(.hidden) {
+    display: block;
+}
+
+#video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#video-container iframe {
+    width: 100%;
+    min-height: 450px;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para móviles */
+@media (max-width: 640px) {
+    #video-container {
+        padding: 0.5rem;
+    }
+    
+    #video-container iframe {
+        min-height: 250px;
+    }
+}
+
+#back-to-home {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+#back-to-home:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+#back-to-home i {
+    margin-right: 8px;
+}
+
+/* Estilos para los botones */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.btn-outline {
+    border: 1px solid #d1d5db;
+    color: #4b5563;
+}
+
+.btn-outline:hover {
+    background-color: #f3f4f6;
+}
