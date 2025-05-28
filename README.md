@@ -1,2 +1,0 @@
-# CCRedes
-Asignatura de Redes
